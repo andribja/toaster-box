@@ -1,4 +1,4 @@
-uniform mediump float _Metallic;
+
 uniform mediump float _Glossiness;
 uniform sampler2D _OcclusionMap;
 uniform lowp sampler2DShadow _ShadowMapTexture;
@@ -6282,7 +6282,7 @@ SubProgram "gles3 " {
 ò>>ø=>ø=˜F=˜F=à<à<>ø<
 ò”>˜F<˜F=˜Æ;˜Æ;˜Æ<˜Æ<
 ò”<
-ò”<˜Æ;˜Æ;à;à;               ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ  €?   ?   ?   ?   ?ÍÌL=ÍÌL=                ÿÿÿÿ                              €?  €?  €?  €?  €?                               V“¼   Open_Book/lower_leftý„   Open_Book/Side_left Rè   Open_Book/Book_Cover_base   ×ªÆ   pointLight2 ‰ÏÒP	   Open_Book   AšÁ`   pointLight3 Ë³Õu   Open_Book/lower_right   þò{   Open_Book/side_rightDÑ“„   Open_Book/BackgroundmûÏŽ   pointLight1 œRr™   Open_Book/page_top_right—â¯À   Open_Book/page_top_left Â])Ä   Open_Book/page_top_left_2   Xn¼ì   Open_Book/page_top_right_2     UISprite           B   B           A   A   A   A  HC                 ÍÌL=
+ò”<˜Æ;˜Æ;à;à;               ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ  €?   ?   ?   ?   ?ÍÌL=ÍÌL=                ÿÿÿÿ                              €?  €?  €?  €?  €?                               V“¼   Open_Book/lower_leftý„   Open_Book/Side_left Rè   Open_Book/Book_Cover_base   ×ªÆ   pointLight2 ‰ÏÒP	   Open_Book   AšÁ`   pointLight3 Ë³Õu   Open_Book/lower_right   þò{   Open_Book/side_rightDÑ“„   Open_Book/BackgroundmûÏŽ   pointLight1 œRr™   Open_Book/page_top_right—â¯À   Open_Book/page_top_left Â])Ä   Open_Book/page_top_left_2   Xn¼ì   Open_Book/page_top_right_2     UISprite           B   B           A   A   A   A  HC                 ÍÌL=
 ×£=    
 ×£=
 ×£½    
@@ -6291,7 +6291,7 @@ SubProgram "gles3 " {
 ×£½    
 ×£½)\=    
 ×£½ÍÌL½                          à$Û<p1R=n’ÿAÎ-ÿAà$Û<p1R=@     HC  €A  HC  €A
-   Background             B   B           A   A   A   A  HC                 ÍÌL=
+   Background             B   B           A   A   A   A  HC                 ÍÌL=
 ×£=    
 ×£=
 ×£½    
