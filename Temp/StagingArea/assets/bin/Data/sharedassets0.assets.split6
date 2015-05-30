@@ -1,4 +1,8 @@
-pvar_10.w * _Color.w);
+mpvar_15 * _SpecColor.xyz) * (
+    pow (nh_19, y_23)
+   * tmpvar_10.w)));
+  c_18.xyz = tmpvar_24;
+  c_18.w = (tmpvar_10.w * _Color.w);
   c_17.w = c_18.w;
   mediump vec3 tmpvar_25;
   tmpvar_25 = (c_18.xyz + (tmpvar_11 * xlv_TEXCOORD3));
