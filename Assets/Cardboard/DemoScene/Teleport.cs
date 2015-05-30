@@ -23,6 +23,7 @@ public class Teleport : MonoBehaviour {
 	//private float DOUBLE_CLICK_TIME = 0.5f;
 
   void Start() {
+	DontDestroyOnLoad (this.gameObject);
     startingPosition = transform.localPosition;
     SetGazedAt(false);
   }
@@ -31,7 +32,7 @@ public class Teleport : MonoBehaviour {
     GetComponent<Renderer>().material.color = gazedAt ? Color.green : Color.red;
   }
 
-	public void ReturnToStart() {
+	public void ReturnToStart() { // go back to the middle
 		transform.localPosition = new Vector3 (0, 4, 0);
 		isAtStart = true;
 	}
@@ -44,7 +45,7 @@ public class Teleport : MonoBehaviour {
     Cardboard.SDK.VRModeEnabled = !Cardboard.SDK.VRModeEnabled;
   }
 
-  public void TeleportUnderCouch() {
+  public void TeleportUnderCouch() { // zoom in under couch
 		transform.localPosition = new Vector3 (-(float)3.5, (float)0.5, (float)1.2);
 		isAtStart = false;
   }

@@ -8,11 +8,11 @@ public class DisableCollider : MonoBehaviour {
 		collider = GetComponent<Collider> ();
 	}
 
-	public void DisableCol() {
+	public void DisableCol() { // disable collider
 		collider.enabled = false;
 	}
 
-	public void EnableCol() {
+	public void EnableCol() { // enable collider
 		collider.enabled = true;
 	}
 
