@@ -18,7 +18,7 @@ using System.Collections;
 
 public class Teleport : MonoBehaviour {
 	private Vector3 startingPosition;
-	private bool isAtStart = true;
+	//private bool isAtStart = true;
 	//private float lastClickTime;
 	//private float DOUBLE_CLICK_TIME = 0.5f;
 
@@ -34,7 +34,7 @@ public class Teleport : MonoBehaviour {
 
 	public void ReturnToStart() { // go back to the middle
 		transform.localPosition = new Vector3 (0, 4, 0);
-		isAtStart = true;
+		//isAtStart = true;
 	}
 
   public void Reset() {
@@ -47,8 +47,22 @@ public class Teleport : MonoBehaviour {
 
   public void TeleportUnderCouch() { // zoom in under couch
 		transform.localPosition = new Vector3 (-(float)3.5, (float)0.5, (float)1.2);
-		isAtStart = false;
+		// isAtStart = false;
   }
+
+	public void TeleportToPaperclips() {
+		transform.localPosition = new Vector3 (4.2f, 1.5f, 1.5f);
+		// isAtStart = false;
+	}
+
+	public void TeleportToKey() {
+		transform.localPosition = new Vector3 (3, 7, -4);
+	}
+
+	public void TeleportToPW() {
+		transform.localPosition = new Vector3 (5, 5.5f, 4);
+		// isAtStart = false;
+	}
 
 	void Update() {
 		//nothing here yet
