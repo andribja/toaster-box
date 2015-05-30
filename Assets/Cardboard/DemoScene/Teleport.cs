@@ -15,9 +15,12 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Collider))]
+
 public class Teleport : MonoBehaviour {
-  private Vector3 startingPosition;
+	private Vector3 startingPosition;
+	private bool isAtStart = true;
+	//private float lastClickTime;
+	//private float DOUBLE_CLICK_TIME = 0.5f;
 
   void Start() {
     startingPosition = transform.localPosition;
@@ -28,6 +31,11 @@ public class Teleport : MonoBehaviour {
     GetComponent<Renderer>().material.color = gazedAt ? Color.green : Color.red;
   }
 
+	public void ReturnToStart() {
+		transform.localPosition = new Vector3 (0, 4, 0);
+		isAtStart = true;
+	}
+
   public void Reset() {
     transform.localPosition = startingPosition;
   }
@@ -36,10 +44,12 @@ public class Teleport : MonoBehaviour {
     Cardboard.SDK.VRModeEnabled = !Cardboard.SDK.VRModeEnabled;
   }
 
-  public void TeleportRandomly() {
-    Vector3 direction = Random.onUnitSphere;
-    direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
-    float distance = 2 * Random.value + 1.5f;
-    transform.localPosition = direction * distance;
+  public void TeleportUnderCouch() {
+		transform.localPosition = new Vector3 (-(float)3.5, (float)0.5, (float)1.2);
+		isAtStart = false;
   }
+
+	void Update() {
+		//nothing here yet
+	}
 }

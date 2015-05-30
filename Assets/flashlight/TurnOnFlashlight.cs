@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TurnOnFlashlight : MonoBehaviour {
 	private Light lt;
+	private int found;
 	// Use this for initialization
 	void Start () {
 		lt = GetComponent<Light>();
@@ -10,7 +11,9 @@ public class TurnOnFlashlight : MonoBehaviour {
 	}
 
 	public void turnOn() {
-		lt.intensity = 5;
+		found++;
+		if (found >= 2)
+			lt.intensity = 5;
 	}
 	
 	// Update is called once per frame
